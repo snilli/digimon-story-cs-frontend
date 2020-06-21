@@ -5,6 +5,7 @@
 	"dependencies": {
 		"@material-ui/core": "^4.10.2",
 		"@material-ui/icons": "^4.9.1",
+		"axios": "^0.19.2",
 		"clsx": "latest",
 		"next": "latest",
 		"react": "latest",
@@ -13,7 +14,10 @@
 	"scripts": {
 		"dev": "next",
 		"build": "next build",
-		"start": "next start"
+		"start": "next start",
+		"lint": "eslint . --ext .tsx",
+		"lint-and-fix": "eslint . --ext .ts --fix",
+		"prettier-format": "prettier --config .prettierrc \"src/**/*.{ts,tsx}\" --write"
 	},
 	"devDependencies": {
 		"@types/next": "latest",
@@ -24,6 +28,8 @@
 		"@typescript-eslint/parser": "^3.3.0",
 		"eslint": "^7.3.0",
 		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-jest": "^23.16.0",
+		"eslint-plugin-jest-dom": "^3.0.1",
 		"eslint-plugin-jsx-a11y": "^6.3.1",
 		"eslint-plugin-prettier": "^3.1.4",
 		"eslint-plugin-react": "^7.20.0",

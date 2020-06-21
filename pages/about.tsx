@@ -1,12 +1,12 @@
-import React from 'react';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import ProTip from '../src/ProTip';
-import Link from '../src/Link';
-import Copyright from '../src/Copyright';
+import React, { FunctionComponent } from 'react'
+import Container from '@material-ui/core/Container'
+import Typography from '@material-ui/core/Typography'
+import Box from '@material-ui/core/Box'
+import ProTip from '../src/ProTip'
+import Link from '../src/Link'
+import Copyright from '../src/Copyright'
 
-export default function About() {
+const about: FunctionComponent = () => {
   return (
     <Container maxWidth="sm">
       <Box my={4}>
@@ -18,5 +18,7 @@ export default function About() {
         <Copyright />
       </Box>
     </Container>
-  );
+  )
 }
+
+export default about
